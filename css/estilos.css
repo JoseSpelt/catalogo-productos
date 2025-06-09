@@ -1,0 +1,381 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7b00;
+    color: white;
+    border: none;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.producto p {
+    margin: 5px 0;
+}
+
+.producto button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: 1px solid #0072ff;
+    background-color: white;
+    color: #0072ff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.producto button:hover {
+    background-color: #0072ff;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 40px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.header nav {
+    margin-top: 10px;
+}
+
+.destacados, .ventajas, .testimonios {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.ventaja-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.ventaja {
+    flex: 1 1 250px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.testimonial {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 4px solid #0072ff;
+    border-radius: 5px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.btn-secundario {
+    background-color: #ffffff;
+    color: #0072ff;
+    border: 2px solid #0072ff;
+    margin-top: 30px;
+}
+
+.btn-secundario:hover {
+    background-color: #0072ff;
+    color: #ffffff;
+}
+
+.footer {
+    background-color: #222;
+    color: #eee;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #ff7b00;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+.titulo-productos {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.productos {
+    background-color: #ffffff;
+    padding: 40px 20px;
+}
+
+.lista-productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+}
+
+.lista-productos .producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.lista-productos .producto:hover {
+    transform: translateY(-5px);
+}
+.carrito-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.carrito-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.carrito-lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.carrito-total {
+    margin-top: 30px;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+.carrito-total h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilos para Contacto */
+
+.contacto-container {
+    max-width: 480px;
+    margin: 40px auto 60px;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgb(0 0 0 / 0.1);
+}
+
+.titulo {
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+.input,
+.textarea {
+    padding: 12px 14px;
+    margin-bottom: 20px;
+    border: 1.8px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus,
+.textarea:focus {
+    border-color: #0072ff;
+    outline: none;
+}
+
+.btn-contacto {
+    background-color: #0072ff;
+    color: white;
+    padding: 14px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contacto:hover {
+    background-color: #005bb5;
+}
+
+.confirmacion {
+    display: none;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #28a745;
+    text-align: center;
+}
+
+
+@media (max-width: 520px) {
+    .contacto-container {
+        margin: 20px 15px 40px;
+        padding: 25px 20px;
+    }
+}
+
+/* Testimonios */
+
+.form-testimonio {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Opcional: limitar el ancho */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-testimonio h3 {
+    margin-bottom: 10px;
+    color: #222;
+    font-size: 18px;
+}
+
+.form-testimonio label {
+    margin-bottom: 4px;
+    font-weight: 600;
+    color: #555;
+    font-size: 14px;
+}
+
+.form-testimonio input,
+.form-testimonio textarea {
+    padding: 8px 10px;
+    margin-bottom: 14px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.form-testimonio input:focus,
+.form-testimonio textarea:focus {
+    border-color: #0072ff;
+    outline: none;
+}
+
+.confirmacion {
+    font-weight: 600;
+    color: #28a745;
+    text-align: center;
+    margin-top: 8px;
+    display: none;
+    font-size: 14px;
+}
+.form-testimonio button {
+    padding: 10px 16px;
+    font-size: 15px;
+    border-radius: 6px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda Online - Tecnología y Estilo</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Mi Tienda Online</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="carrito.html">Carrito</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Potencia tu día con tecnología</h2>
+            <p>Los mejores gadgets para tu vida digital. Envíos rápidos y atención personalizada.</p>
+            <a href="productos.html" class="btn">Explorar Productos</a>
+        </div>
+    </section>
+
+<section class="productos">
+    <div class="container">
+        <h2 class="titulo-productos">Productos Destacados</h2>
+        <div class="lista-productos">
+            <div class="producto">
+                <img src="../img/auriculares.webp" alt="Auriculares Bluetooth">
+                <h3>Auriculares Bluetooth</h3>
+                <p>Auriculares inalámbricos con cancelación de ruido.</p>
+                <span>$120</span>
+            </div>
+            <div class="producto">
+                <img src="../img/smartwatch.webp" alt="Smartwatch Deportivo">
+                <h3>Smartwatch Deportivo</h3>
+                <p>Reloj inteligente con GPS y monitoreo cardíaco.</p>
+                <span>$250</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section class="testimonios">
+    <div class="container">
+        <h2>Lo que dicen nuestros clientes</h2>
+
+        <div id="testimonios-lista">
+            <div class="testimonial">
+                <p>"Excelente atención, productos de primera calidad. ¡100% recomendado!"</p>
+                <span>- Laura M.</span>
+            </div>
+            <div class="testimonial">
+                <p>"El smartwatch llegó en 2 días. Muy buena experiencia."</p>
+                <span>- Daniel R.</span>
+            </div>
+        </div>
+
+        <form id="form-testimonio" class="form-testimonio">
+            <h3>Deja tu testimonio</h3>
+            <label for="nombreTestimonio">Nombre:</label>
+            <input type="text" id="nombreTestimonio" name="nombreTestimonio" required placeholder="Tu nombre">
+
+            <label for="mensajeTestimonio">Mensaje:</label>
+            <textarea id="mensajeTestimonio" name="mensajeTestimonio" required placeholder="Tu testimonio" rows="4"></textarea>
+
+            <button type="submit" class="btn btn-contacto">Enviar Testimonio</button>
+            <p id="confirmacionTestimonio" class="confirmacion"></p>
+        </form>
+    </div>
+</section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mi Tienda Online | Todos los derechos reservados</p>
+            <p>Seguinos en redes: 
+                <a href="#">Facebook</a> | 
+                <a href="#">Instagram</a> | 
+                <a href="#">Twitter</a>
+            </p>
+        </div>
+    </footer>
+    <script src="../js/testimonios.js"></script>
+</body>
+</html>
