@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Confirmar Pedido</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <script defer src="../js/confirmar-pedido.js"></script>
+</head>
+<body class="carrito-page">
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">TechNova Store</div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="confirmar-container animacion-contacto">
+    <div class="confirmar-hero">
+        <h2>📦 Confirmar Pedido</h2>
+        <p>Ingresá tus datos para finalizar la compra</p>
+    </div>
+
+    <form id="formulario-pedido" class="form-contacto">
+        <label class="label">Nombre completo:</label>
+        <input class="input" type="text" id="nombre" required />
+
+        <label class="label">Teléfono:</label>
+        <input class="input" type="tel" id="telefono" required />
+
+        <label class="label">Correo electrónico:</label>
+        <input class="input" type="email" id="email" required />
+
+        <label class="label">Dirección de envío:</label>
+        <textarea class="textarea" id="direccion" rows="3" required></textarea>
+
+        <label class="label">Comentario (opcional):</label>
+        <textarea class="textarea" id="comentario" rows="2"></textarea>
+
+        <button type="submit" class="btn-contacto-moderno">Finalizar Pedido</button>
+    </form>
+    </main>
+
+
+  <footer class="footer">
+    <p>&copy; 2025 TechNova Store</p>
+  </footer>
+</body>
+</html>

@@ -7,22 +7,31 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <header>
-        <h1>Catálogo de Productos</h1>
+    <header class="header">
+    <div class="container nav-container">
+        <div class="logo">TechNova Store</div>
         <nav>
             <a href="index.html">Inicio</a>
             <a href="productos.html">Productos</a>
             <a href="carrito.html">Carrito</a>
             <a href="contacto.html">Contacto</a>
         </nav>
-    </header>
+    </div>
+</header>
+<section class="nueva-hero-productos">
+    <div class="hero-content">
+      <h1>Explorá nuestros Productos</h1>
+      <p>Innovación, estilo y calidad en un solo lugar</p>
+    </div>
+  </section>
 
     <main id="productos-container" class="productos-grid"></main>
 
     <footer>
-        <p>&copy; 2025 Mi Tienda Online</p>
+        <p>&copy; 2025 TechNova Store</p>
     </footer>
 
+    <div id="toast-container"></div>
     <script src="../js/productos.js"></script>
 </body>
 </html>

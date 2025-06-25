@@ -29,5 +29,24 @@ function agregarAlCarrito(id) {
     const producto = productos.find(p => p.id === id);
     carrito.push(producto);
     localStorage.setItem("carrito", JSON.stringify(carrito));
-    alert("Producto agregado al carrito");
+    mostrarToast("Producto agregado al carrito");
+}
+
+function mostrarToast(mensaje) {
+    const toastContainer = document.getElementById("toast-container");
+    const toast = document.createElement("div");
+    toast.className = "toast";
+
+    toast.innerHTML = `<i>✔️</i> <span>${mensaje}</span>`;
+
+    toastContainer.appendChild(toast);
+
+    setTimeout(() => {
+        toast.classList.add("show");
+    }, 100);
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+        setTimeout(() => toast.remove(), 500); 
+    }, 3000);
 }

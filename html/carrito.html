@@ -6,15 +6,17 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <header>
-        <h1>Mi Carrito</h1>
+    <header class="header">
+    <div class="container nav-container">
+        <div class="logo">TechNova Store</div>
         <nav>
             <a href="index.html">Inicio</a>
             <a href="productos.html">Productos</a>
             <a href="carrito.html">Carrito</a>
             <a href="contacto.html">Contacto</a>
         </nav>
-    </header>
+    </div>
+</header>
 
     <main class="carrito-container">
         <h2>Productos seleccionados</h2>
@@ -22,14 +24,17 @@
 
         <div class="carrito-total">
             <h3>Total: $<span id="total"></span></h3>
-            <button onclick="vaciarCarrito()" class="btn">Vaciar Carrito</button>
+        </div>
+        <div class="botones-carrito">
+            <button onclick="vaciarCarrito()" class="btn btn-vaciar">Vaciar Carrito</button>
+            <button onclick="realizarPedido()" class="btn btn-pedido">Realizar Pedido</button>
         </div>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Mi Tienda Online</p>
+    <footer class="footer">
+        <p>&copy; 2025 TechNova Store</p>
     </footer>
-
+    <div id="toast-container"></div>
     <script src="../js/carrito.js"></script>
 </body>
 </html>

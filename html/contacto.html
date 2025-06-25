@@ -7,36 +7,37 @@
 </head>
 <body>
     <header class="header">
-        <h1>Contacto</h1>
-        <nav class="nav">
-            <a href="index.html" class="nav-link">Inicio</a>
-            <a href="productos.html" class="nav-link">Productos</a>
-            <a href="carrito.html" class="nav-link">Carrito</a>
-            <a href="contacto.html" class="nav-link active">Contacto</a>
+    <div class="container nav-container">
+        <div class="logo">TechNova Store</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="carrito.html">Carrito</a>
+            <a href="contacto.html">Contacto</a>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <main class="contacto-container">
-        <h2 class="titulo">Formulario de Contacto</h2>
-        <form id="form-contacto" class="form-contacto">
-            <label for="nombre" class="label">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required class="input" />
+    <main class="contacto-container animacion-contacto">
+    <h2 class="titulo">Contáctanos</h2>
+    <form id="form-contacto" class="form-contacto">
+        <label for="nombre" class="label">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required class="input" />
 
-            <label for="email" class="label">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required class="input" />
+        <label for="email" class="label">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required class="input" />
 
-            <label for="mensaje" class="label">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required class="textarea"></textarea>
+        <label for="mensaje" class="label">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required class="textarea"></textarea>
 
-            <button type="submit" class="btn-contacto">Enviar</button>
-        </form>
-        <p id="confirmacion" class="confirmacion">¡Mensaje enviado correctamente!</p>
-    </main>
+        <button type="submit" class="btn-contacto-moderno">Enviar Mensaje</button>
+    </form>
+</main>
 
     <footer class="footer">
-        <p>&copy; 2025 Mi Tienda Online</p>
+        <p>&copy; 2025 TechNova Store</p>
     </footer>
-
+    <div id="toast-contacto"></div>
     <script src="../js/contacto.js"></script>
 </body>
 </html>
