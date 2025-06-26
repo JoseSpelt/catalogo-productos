@@ -350,7 +350,6 @@ html, body {
     margin: auto;
 }
 
-/* Rediseño compacto y moderno */
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
@@ -414,7 +413,6 @@ body {
   text-decoration: none;
 }
 
-/* Animaciones y mejoras para NAV y Ventajas */
 .header {
   background-color: #1e1e1e;
   color: white;
@@ -491,7 +489,6 @@ body {
   color: #ccc;
 }
 
-/* Animación para aparecer */
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -503,7 +500,6 @@ body {
   }
 }
 
-/* Rediseño para cada producto */
 .producto {
   background-color: #ffffff;
   border-radius: 10px;

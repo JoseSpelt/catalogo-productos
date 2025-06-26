@@ -34,6 +34,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   totalSpan.textContent = total.toFixed(2);
 
-  // Limpiamos el carrito una vez mostrado
   localStorage.removeItem("carrito");
 });

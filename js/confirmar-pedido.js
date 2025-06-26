@@ -22,13 +22,11 @@ document.getElementById("formulario-pedido").addEventListener("submit", function
 
   localStorage.setItem("datosPedido", JSON.stringify(datosUsuario));
 
-  // Mensaje de éxito
   const exito = document.createElement("div");
   exito.className = "toast-exito show";
   exito.innerHTML = `<i>✅</i> ¡Tu pedido fue enviado correctamente!`;
   document.body.appendChild(exito);
 
-  // Espera para mostrar el toast antes de redirigir
   setTimeout(() => {
     window.location.href = "pedido.html";
   }, 1500);

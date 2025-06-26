@@ -6,7 +6,6 @@ function mostrarCarrito() {
 
     const productosAgrupados = {};
 
-    // Agrupamos por ID
     carrito.forEach(producto => {
         if (productosAgrupados[producto.id]) {
             productosAgrupados[producto.id].cantidad++;
